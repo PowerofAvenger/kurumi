@@ -52,11 +52,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot. I will use my angel Zafkiel and protect your group. You can find my list of available commands with /help.
+I am an group management bot. I will use my Powers and protect your group. You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-KURUMI is here! 
+Daisy is here! 
 I Use My Powers To Help Admins To Manage Their Groups! 
 *Main* commands available :
  • /help: PM's you this message.
@@ -73,7 +73,7 @@ TOKISAKI_IMG = "https://telegra.ph/file/2f725b59802b7e270ba15.jpg"
 KURUMI_IMG = "https://telegra.ph/file/2f725b59802b7e270ba15.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Paypal](https://www.t.me/GodKiller_mArk2)"""
+Click here to donate in [PayTM](https://www.t.me/GodKiller_mArk2)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -219,7 +219,7 @@ def start(update: Update, context: CallbackContext):
                     
     else:
         update.effective_message.reply_video(
-                KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Zaphkiel")
+                KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Powers")
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -534,7 +534,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My Zaphkiel won't let me die!](https://telegra.ph/file/b069f7fbe7eecdb56c36c.mp4)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My DEVS won't let me die!](https://telegra.ph/file/b069f7fbe7eecdb56c36c.mp4)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
