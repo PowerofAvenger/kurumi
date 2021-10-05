@@ -1,4 +1,4 @@
-# KURUMIBOT
+## RANDI BOT
 ![KURUMI Chan](https://telegra.ph/file/e86cbb3e4a413f36c5aae.jpg)
 # KURUMI Chan
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)!]
