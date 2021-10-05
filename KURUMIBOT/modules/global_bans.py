@@ -221,7 +221,7 @@ def gban(update: Update, context: CallbackContext):
         send_to_list(
             bot,
             DRAGONS + DEMONS,
-            f"Gban complete! (User banned in <code>{gbanned_chats}</code> chats)",
+            f"Gban complete! \n Aur lo mere se pange!! 😂😂 \n (User banned in <code>{gbanned_chats}</code> chats)",
             html=True)
 
     end_time = time.time()
