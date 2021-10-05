@@ -51,12 +51,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is Daisy Johnson! 
-I am an group management bot. I will use my Powere and protect your group. You can find my list of available commands with /help.
+Hi {}, my name is {}! 
+I am an Anime themed group management bot. I will use my angel Zafkiel and protect your group. You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Daisy is here! 
+KURUMI is here! 
 I Use My Powers To Help Admins To Manage Their Groups! 
 *Main* commands available :
  • /help: PM's you this message.
@@ -69,11 +69,11 @@ For all command use / [or](https://telegra.ph/file/b1b545eb4877b012eac82.png) !
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-TOKISAKI_IMG = " "
-KURUMI_IMG = " "
+TOKISAKI_IMG = "https://telegra.ph/file/99bbcc3b8564804dc2ab0.jpg"
+KURUMI_IMG = "https://telegra.ph/file/e1d87ec2bdac4e3cfe0a4.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate @godkiller_mark2"""
+Click here to donate in [Paypal](https://www.paypal.me/zameeljaz)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -191,7 +191,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Daisy Johnson to your group",
+                            text="☑️ Add Kurumi Chan to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -201,25 +201,25 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="My luv ❤",
-                             url="https://t.me/godkiller_mark2")
+                             url="https://t.me/A_lonelyPerson")
                     ], 
                      [
                          InlineKeyboardButton(
                              text="🔔 Updates of KURUMI 🔔",
-                             url="https://t.me/daisy_johnson_logs")
+                             url="https://t.me/hiroiscool")
                     ], 
-                
-                         
-                          
-
-                    ]))
+                     [
+                         InlineKeyboardButton(
+                             text="📳 Anime Chat Group 📳",
+                             url="https://t.me/WeebXWorld")
+                    ]]))
                      
                     
                   
                     
     else:
         update.effective_message.reply_video(
-                KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Powere")
+                KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Zaphkiel")
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -534,7 +534,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My Powers are quit destructive!]( )", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My Zaphkiel won't let me die!](https://telegra.ph/file/b069f7fbe7eecdb56c36c.mp4)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
@@ -593,3 +593,4 @@ if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     main()
+
