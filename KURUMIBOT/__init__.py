@@ -186,7 +186,11 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("SungJinwoo", API_ID, API_HASH)
+Mrunal = TelegramClient('Mrunal', API_ID, API_HASH).start(bot_token=TOKEN) #fsub client By @Godmrunal
+ 
 dispatcher = updater.dispatcher
+
+
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
