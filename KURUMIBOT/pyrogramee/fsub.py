@@ -63,7 +63,7 @@ def _onUnMuteRequest(client, lel):
 
         client.answer_callback_query(lel.id, text="❗ Warning: Don't click the button if you can speak freely.👿", show_alert=True)
 
-@Jebot.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
+@app.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
 
 def _check_member(client, message):
 
@@ -113,7 +113,7 @@ def _check_member(client, message):
 
          client.send_message(chat_id, text=f"❗ **I am not an admin in {chat_u}**\n__Make me admin in the channel__")
 
-@Jebot.on_message(filters.command("/Godmrunal") & ~filters.group & ~filters.channel)
+@app.on_message(filters.command("/Godmrunal") & ~filters.group & ~filters.channel)
 
 def start(client, message):
 
